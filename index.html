@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY PORTFOLIO</title>
+  <link rel="stylesheet" href="MAIN.CSS">
+</head>
+
+
+
+<!-- Navbar -->
+<nav id="home" class="navbar">
+  <div class="logo">Portfolio.</div>
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul class="menu" id="menu">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#certificates">Certificates</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Sample Content -->
+
+
+<!-- JavaScript for interaction -->
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+
+  // Toggle menu on hamburger click
+  hamburger.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+
+  // Highlight active link on click
+  const links = document.querySelectorAll('.menu li a');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+      // Close menu on mobile after clicking
+      if (menu.classList.contains('show')) {
+        menu.classList.remove('show');
+      }
+    });
+  });
+</script>
+
+</body>
+</html></div>
+
+   <div class="about-me">
+    <img src="./image/anand image.jpg" alt="about-me-image">
+     <h2 >"HI" </h2>
+     <P>Hello! My name is Anand Srivastava I am a passionate and motivated individual currently pursuing a Bachelor of Computer Applications (BCA) with a specialization in Data Science & Artificial Intelligence at Shri Ramswaroop Memorial University.</p><br>
+
+   </div>
+
+
+   <div id="about" class="about-section">
+  <h2 class="section-title">About Me</h2>
+  <div class="about-content">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Team" />
+    </div>
+    <div class="about-text">
+    <p>I'm a passionate Software Developer 💻 with a knack for turning complex problems into elegant solutions. My journey in the tech world has been driven by curiosity 🧠 and a love for innovation 🚀, leading me to specialize in Python, JavaScript, React.
+
+       <p>I thrive in dynamic environments where creativity 🎨 and collaboration 🤝 fuel success.</p> <p>Whether it's developing scalable web applications 🌐, optimizing code for performance ⚡, or diving into the latest tech trends 📈, I bring enthusiasm and a growth mindset to every project.</p><br>
+
+       <p>Outside of coding, I’m an advocate for continuous learning 📚 and enjoy exploring new tools and methodologies to stay ahead in this ever-evolving field. Let’s connect and discuss how we can push the boundaries of what’s possible in software development together! 🔗</p>
+    </div>
+  </div>
+</div>
+
+<!-- certificates -->
+
+<h2 class="section-title">My Certificates</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Certificates Showcase</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+
+
+
+  <div id="certificates" class="certificates-container">
+      <div class="certificate" data-title="IN GEN AI IN BUSINESS INTELLIGENCE" data-info="Completed in 12 april 2025">
+        <img src="./image/1746245897329.jpeg" alt="GEN AI">
+      </div>
+      <div class="certificate" data-title="IN WATSON STUDIOS" data-info="Completed in Mar 2024">
+        <img src="./image/watson studios.jpeg" alt="WATSON STUDIOS">
+      </div>
+      <div class="certificate" data-title="IN COGNOS ANALYTICS IBM" data-info="Completed in 31 may 2024">
+        <img src="./image/cognos analytics.jpeg" alt="COGNOS ANALYTICS">
+      </div>
+      <!-- Add more certificates as needed -->
+    </div>
+  </section>
+
+  <div id="overlay" class="overlay">
+    <span id="closeBtn">&times;</span>
+    <img id="overlayImg" src="" alt="">
+    <div class="caption">
+      <h3 id="overlayTitle"></h3>
+      <p id="overlayInfo"></p>
+    </div>
+  </div>
+
+  <script src="MAIN.js"></script>
+   
+
+
+</body>
+</html>
